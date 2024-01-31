@@ -1,0 +1,276 @@
+body {
+  font-family: Montserrat, sans-serif;
+  color: #111;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 365px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 19px;
+  background-color: aqua;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-icon {
+  stroke: #fd9222;
+  fill: transparent;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.03;
+}
+
+.logo-text-italic {
+  margin-right: 2px;
+  font-style: italic;
+}
+
+.menu-open-btn-icon {
+  stroke: #111111;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #1e1823;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 88px;
+}
+
+.menu-close-btn-icon {
+  stroke: #ffffff;
+  fill: transparent;
+}
+
+.mob-menu-navigation {
+  padding-left: 28px;
+  margin-bottom: 32px;
+}
+
+.mob-menu-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02;
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: #fd9222;
+}
+
+.mob-menu-soc-list {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.header-soc-icon {
+  stroke: #ffff;
+}
+
+.hero {
+  padding-bottom: 80px;
+}
+
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/chocolate_main-mob.jpg);
+  background-repeat: no-repeat;
+  background-image: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 395px 20px 20px 20px;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03px;
+  margin-bottom: 32px;
+  max-width: 295px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 32px 14px;
+  flex-wrap: wrap;
+}
+
+.buy-btn {
+  padding: 12px 28px;
+  border-radius: 100px;
+  background: #fd9222;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    border-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.how-its-made-btn {
+  padding: 12px 28px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #ffff;
+  cursor: pointer;
+}
+
+.scroll-down-btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-down-btn:hover,
+.scroll-down-btn:focus {
+  color: #fd9222;
+}
+
+.scroll-down-btn-icon {
+  fill: rgba(253, 146, 34, 1);
+  padding: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.scroll-down-btn-icon:hover,
+.scroll-down-btn-icon:focus {
+  fill: #ffffff;
+  background-color: rgba(253, 146, 34, 1);
+}
