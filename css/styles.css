@@ -66,7 +66,7 @@ input {
 .header {
   padding-top: 25px;
   padding-bottom: 19px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .header-navigation {
@@ -156,7 +156,7 @@ input {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02;
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-link:hover,
@@ -172,10 +172,17 @@ input {
 
 .header-soc-icon {
   stroke: #ffff;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero {
+.header-soc-icon:hover,
+.header-soc-icon:focus {
+  stroke: #fd9222;
+}
+
+.hero-section {
   padding-bottom: 80px;
+  /* background-color: rgb(255, 0, 123); */
 }
 
 .hero-container {
@@ -219,15 +226,14 @@ input {
   line-height: normal;
   border-radius: 100px;
   border: 1px solid transparent;
-  cursor: pointer;
-  transition: background-color 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
-    border-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-btn:hover,
 .buy-btn:focus {
-  background-color: transparent;
-  border-color: #ffffff;
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 .how-its-made-btn {
@@ -241,7 +247,14 @@ input {
   line-height: normal;
   border-radius: 100px;
   border: 1px solid #ffff;
-  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.how-its-made-btn:hover,
+.how-its-made-btn:focus {
+  border: 1px solid #fd9222;
+  color: #fd9222;
 }
 
 .scroll-down-btn {
@@ -273,4 +286,235 @@ input {
 .scroll-down-btn-icon:focus {
   fill: #ffffff;
   background-color: rgba(253, 146, 34, 1);
+}
+
+.features-container {
+  background: #1e1823;
+  padding: 20px 20px 36px 20px;
+}
+
+.feaures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feaures-list-item {
+  width: 100%;
+}
+
+.features-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border-radius: 365px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  margin-bottom: 22px;
+}
+
+.features-icon {
+  fill: #fd9222;
+}
+
+.features-title-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.features-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02;
+}
+
+.ingredients-section {
+  padding: 80px 0;
+  /* background-color: aqua; */
+}
+
+.ingredients-title {
+  color: #111;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.ingredients-title > span {
+  color: #fd9222;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ingredients-list-item {
+  width: 100%;
+  border-radius: 15px;
+  padding: 14px;
+}
+
+.ingredients-list-item-inner-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.ingredients-overlay {
+  content: "";
+  padding: 14px;
+  position: absolute;
+  top: 0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-list-item:hover .ingredients-overlay {
+  transform: translateY(0%);
+}
+
+.ingredients-overlay-product-name {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.03;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.ingredients-buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.ingredient-info-btn {
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  border: none;
+  background: #fd9222;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.ingredient-benefits-btn {
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  border: 1px solid #fd9222;
+  background: #fafafa;
+  color: #111;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.ingredient-description {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  background: #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-list-item:nth-child(even) {
+  border: 1px solid #fd9222;
+  background: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+  background: #1e1823;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredients-list-item:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.ingredients-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-bottom: 11px;
+}
+
+.ingredients-list-item:nth-child(odd) .ingredients-icon-wrap {
+  border: 1px solid #fafafa;
+}
+
+.ingredients-list-item:nth-child(even) .ingredients-icon-wrap {
+  border: 1px solid #fd9222;
+}
+
+.ingredients-list-item:nth-child(odd) .arrow-icon {
+  stroke: #fafafa;
+}
+
+.ingredients-list-item:nth-child(even) .arrow-icon {
+  stroke: #fd9222;
+}
+
+.ingredients-img {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.ingredients-product-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02px;
+  text-transform: uppercase;
+  padding-left: 14px;
+  padding-bottom: 14px;
+}
+
+.ingredients-list-item:nth-child(odd) .ingredients-product-name {
+  color: #fff;
+}
+
+.ingredients-list-item:nth-child(even) .ingredients-product-name {
+  color: #fd9222;
 }
