@@ -191,7 +191,7 @@ input {
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4)
     ),
-    url(../images/chocolate_main-mob.jpg);
+    url(../images/chocolate-main-mob.jpg);
   background-repeat: no-repeat;
   background-image: center;
   background-size: cover;
@@ -518,3 +518,105 @@ input {
 .ingredients-list-item:nth-child(even) .ingredients-product-name {
   color: #fd9222;
 }
+
+.made-section {
+  padding-bottom: 80px;
+}
+
+.made-title {
+  color: #111;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.made-title > span {
+  color: #fd9222;
+}
+
+.made-section-image {
+  margin-bottom: 20px;
+}
+
+.chocolate-recipe-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 14px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.chocolate-recipe {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.made-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.made-list-item-steps {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+}
+
+.circle-before-text {
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
+}
+
+/* .made-list {
+}
+
+.made-list-item {
+  display: flex;
+  align-items: first baseline;
+  gap: 8px;
+}
+
+.made-list-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.made-list-item::before {
+  content: "";
+  display: flex;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
+}
+
+.made-list-item-steps {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+} */
