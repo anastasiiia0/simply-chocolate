@@ -63,20 +63,20 @@
 
         <ul class="mob-menu-soc-list">
           <li class="mob-menu-soc-list-item">
-            <a href="" class="mob-soc-link" target="_blank"
-              ><svg class="header-soc-icon" width="20" height="20">
+            <a href="" class="mob-soc-link" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
             ></a>
           </li>
           <li class="mob-menu-soc-list-item">
             <a href="" class="mob-soc-link" target="_blank">
-              <svg class="header-soc-icon" width="20" height="20">
+              <svg class="soc-icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
             ></a>
           </li>
           <li class="mob-menu-soc-list-item">
             <a href="" class="mob-soc-link" target="_blank"
-              ><svg class="header-soc-icon" width="20" height="20">
+              ><svg class="soc-icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
             ></a>
           </li>
@@ -85,7 +85,7 @@
     </header>
 
     <main class="main">
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -94,7 +94,7 @@
           <div class="hero-buttons">
             <button type="button" class="buy-btn">Buy now</button>
             <a class="how-its-made-btn" href="#made">How it’s made</a>
-            <a class="scroll-down-btn" href="#reviews"
+            <a class="scroll-down-btn" href="#footer"
               >scroll down
               <svg class="scroll-down-btn-icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#scroll-down-icon"></use>
@@ -104,7 +104,7 @@
         </div>
       </section>
 
-      <section class="features-section">
+      <section class="features-section" id="features">
         <div class="container features-container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="feaures-list">
@@ -155,9 +155,9 @@
         </div>
       </section>
 
-      <section class="ingredients-section">
+      <section class="ingredients-section" id="ingredients">
         <div class="container ingredients-container">
-          <h2 class="ingredients-title">
+          <h2 class="section-title ingredients-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
           </h2>
           <ul class="ingredients-list">
@@ -440,7 +440,7 @@
 
       <section class="made-section" id="made">
         <div class="container">
-          <h2 class="made-title">HOW IT’S <span>MADE</span></h2>
+          <h2 class="section-title made-title">HOW IT’S <span>MADE?</span></h2>
           <img
             src="./images/chocolate-made-mob.jpg"
             alt="liquid chocolate"
@@ -493,17 +493,350 @@
         </div>
       </section>
 
-      <section class="products-section">
-        <div class="container"></div>
+      <section class="products-section" id="products">
+        <div class="container">
+          <h2 class="section-title products-title">
+            OUR <span>PRODUCTS</span>
+          </h2>
+          <ul class="products-list">
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/orange-chocolate.png"
+                alt="orange chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">ORANGE</h3>
+              <p class="products-choco-description">Dark chocolate</p>
+              <button type="button" class="price-btn">45 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/apple-cranberry-chocolate.png"
+                alt="apple cranberry chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">APPLE&CRANBERRY</h3>
+              <p class="products-choco-description">Milk chocolate</p>
+              <button type="button" class="price-btn">50 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/lime-sea-salt-chocolate.png"
+                alt="lime sea salt chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">LIME&SEA SALT</h3>
+              <p class="products-choco-description">Dark chocolate</p>
+              <button type="button" class="price-btn">66 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/pineapple-chocolate.png"
+                alt="pineapple chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">PINEAPPLE</h3>
+              <p class="products-choco-description">Dark chocolate</p>
+              <button type="button" class="price-btn">54 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/classic-milk-chocolate.png"
+                alt="classic milk chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">CLASSIC</h3>
+              <p class="products-choco-description">Milk chocolate</p>
+              <button type="button" class="price-btn">45 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/honey-chocolate.png"
+                alt="honey chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">HONEY</h3>
+              <p class="products-choco-description">Milk chocolate</p>
+              <button type="button" class="price-btn">50 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/roasted-fruits-chocolate.png"
+                alt="roasted fruits chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">ROASTED FRUITS</h3>
+              <p class="products-choco-description">Dark chocolate</p>
+              <button type="button" class="price-btn">66 UAH</button>
+            </li>
+            <li class="products-list-item">
+              <img
+                class="products-choco-img"
+                src="./images/classic-white-chocolate.png"
+                alt="classic white chocolate"
+                width="230"
+                height="200"
+              />
+              <h3 class="products-choco-name">CLASSIC</h3>
+              <p class="products-choco-description">White chocolate</p>
+              <button type="button" class="price-btn">54 UAH</button>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="top-sellers-section">
-        <div class="container"></div>
+
+      <section class="top-sellers-section" id="top">
+        <div class="container">
+          <h2 class="section-title top-sellers-title">
+            <span>TOP</span> SELLERS
+          </h2>
+          <ul class="top-sellers-list">
+            <li class="top-sellers-list-item">
+              <div class="top-sellers-card">
+                <img
+                  class="top-sellers-img"
+                  src="./images/chocolate-with-nuts.jpg"
+                  alt="chocolate with nuts"
+                  width="334"
+                  height="464"
+                />
+                <div class="top-sellers-overlay-wrap">
+                  <p class="top-sellers-overlay-text">
+                    Chocolate with nuts is a delectable combination that brings
+                    together the smoothness of chocolate and the crunchiness of
+                    nuts. Whether it's milk chocolate, dark chocolate, or white
+                    chocolate, the addition of nuts adds a whole new dimension
+                    of flavor and texture.
+                  </p>
+                </div>
+              </div>
+              <h3 class="top-sellers-name">CHOCOLATE WITH NUTS</h3>
+            </li>
+            <li class="top-sellers-list-item">
+              <div class="top-sellers-card">
+                <img
+                  class="top-sellers-img"
+                  src="./images/chocolate-with-fruits.jpg"
+                  alt="chocolate with fruits"
+                  width="334"
+                  height="464"
+                />
+                <div class="top-sellers-overlay-wrap">
+                  <p class="top-sellers-overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
+              <h3 class="top-sellers-name">CHOCOLATE WITH FRUITS</h3>
+            </li>
+            <li class="top-sellers-list-item">
+              <div class="top-sellers-card">
+                <img
+                  class="top-sellers-img"
+                  src="./images/dark-chocolate.jpg"
+                  alt="dark chocolate"
+                  width="334"
+                  height="464"
+                />
+                <div class="top-sellers-overlay-wrap">
+                  <p class="top-sellers-overlay-text">
+                    Dark chocolate is a rich and indulgent treat that is beloved
+                    by many chocolate enthusiasts. It is made from cocoa beans,
+                    which are roasted, ground, and then processed to produce
+                    chocolate liquor. Dark chocolate contains a higher
+                    percentage of cocoa solids compared to milk chocolate.
+                  </p>
+                </div>
+              </div>
+              <h3 class="top-sellers-name">DARK CHOCOLATE</h3>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section class="reviews-section" id="reviews">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section-title reviews-title">
+            <span>CHOCOLATE</span> IS LOVED
+          </h2>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <img
+                src="./images/victoria-dobrzhanska-customer.jpg"
+                alt="customer feedback"
+                width="80"
+                height="80"
+                class="reviews-img"
+              />
+              <h3 class="reviews-customer-name">Victoria Dobrzhanska</h3>
+              <p class="reviews-customer-feedback">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="reviews-list-item">
+              <img
+                src="./images/nazar-babenko-customer.jpg"
+                alt="customer feedback"
+                width="80"
+                height="80"
+                class="reviews-img"
+              />
+              <h3 class="reviews-customer-name">Nazar Babenko</h3>
+              <p class="reviews-customer-feedback">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="reviews-list-item">
+              <img
+                src="./images/olena-kampusch-customer.jpg"
+                alt="customer feedback"
+                width="80"
+                height="80"
+                class="reviews-img"
+              />
+              <h3 class="reviews-customer-name">Olena Kampusch</h3>
+              <p class="reviews-customer-feedback">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <button type="submit" class="leave-review-btn">Leave a review</button>
+        </div>
       </section>
+
       <footer class="footer" id="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer-info-top">
+            <h2 class="footer-title">
+              <span>Chocolate</span> a delicious cure for a bad day
+            </h2>
+
+            <div class="footer-contacts">
+              <p class="footer-subtitle">Contact us</p>
+              <address class="footer-address">
+                <ul class="footer-address-list">
+                  <li class="footer-address-list-item">
+                    <a class="footer-address-link" href="tel:+380684439426"
+                      >+380 (68) 443-94-26</a
+                    >
+                  </li>
+                  <li class="footer-address-list-item">
+                    <a
+                      class="footer-address-link"
+                      href="mailto:simplychoc@gmail.com"
+                      >simplychoc@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="footer-soc-networks">
+              <p class="footer-subtitle">Social networks</p>
+              <ul class="footer-soc-list">
+                <li class="footer-soc-list-item">
+                  <a
+                    class="footer-soc-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg width="20" height="20" class="soc-icon">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="footer-soc-list-item">
+                  <a
+                    class="footer-soc-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg width="20" height="20" class="soc-icon">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="footer-soc-list-item">
+                  <a
+                    class="footer-soc-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><svg width="20" height="20" class="soc-icon">
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <nav class="footer-navigation">
+              <ul class="footer-navigation-list">
+                <li class="footer-navigation-list-item">
+                  <a class="footer-navigation-link" href="#home">Home</a>
+                </li>
+                <li class="footer-navigation-list-item">
+                  <a class="footer-navigation-link" href="#made"
+                    >How it’s made?</a
+                  >
+                </li>
+                <li class="footer-navigation-list-item">
+                  <a class="footer-navigation-link" href="#products"
+                    >Our products</a
+                  >
+                </li>
+                <li class="footer-navigation-list-item">
+                  <a class="footer-navigation-link" href="#top">Top sellers</a>
+                </li>
+                <li class="footer-navigation-list-item">
+                  <a class="footer-navigation-link" href="#reviews"
+                    >Chocolate is loved</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <form class="footer-email-form">
+              <input
+                type="text"
+                type="email"
+                name="footer-email"
+                class="footer-email-input"
+                placeholder="Enter your email"
+              />
+            </form>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
