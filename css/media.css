@@ -1,3 +1,14 @@
+@media screen and (min-resolution: 2dppx) {
+  .hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate-main-mob-2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -6,7 +17,11 @@
   }
 
   .header {
-    padding-bottom: 37px;
+    padding-bottom: 35px;
+  }
+
+  .logo {
+    margin-right: 83px;
   }
 
   .menu-open-btn {
@@ -19,6 +34,10 @@
 
   .mob-menu {
     display: none;
+  }
+
+  .header-navigation {
+    justify-content: flex-start;
   }
 
   .header-navigation-list {
@@ -41,6 +60,7 @@
   }
 
   .header-soc-list {
+    margin-left: auto;
     display: flex;
     gap: 12px;
   }
@@ -59,18 +79,35 @@
     padding-bottom: 40px;
   }
 
+  @media screen and (min-resolution: 2dppx) {
+    .hero-container {
+      background-color: rgba(17, 17, 17, 0.6);
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate-main-tab-2x.jpg);
+    }
+  }
+
   .hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate-main-tab.jpg);
     padding: 670px 40px 40px 40px;
   }
 
   .hero-title {
+    max-width: 484px;
     color: #fff;
     font-size: 28px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.03em;
     margin-bottom: 32px;
-    max-width: 484px;
   }
 
   .buy-btn {
@@ -116,6 +153,7 @@
   }
 
   .ingredients-title {
+    max-width: 410px;
     margin-bottom: 50px;
   }
 
@@ -201,7 +239,7 @@
   }
 
   .reviews-list-item {
-    flex-basis: calc((100% - 20px) / 3);
+    flex-basis: calc((100% - 10px * 2) / 3);
   }
 
   .leave-review-btn {
@@ -228,10 +266,11 @@
     max-width: 300px;
     font-size: 28px;
     line-height: 1.21;
-    margin-right: 96px;
   }
 
-  .footer-contacts {
+  .footer-main-info {
+    display: flex;
+    gap: 32px;
     margin-left: auto;
   }
 
@@ -243,7 +282,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
   }
 
   .footer-navigation {
@@ -318,5 +356,161 @@
 
   .send-form-btn {
     padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .logo {
+    margin-right: 413px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .header-soc-list {
+    gap: 14px;
+  }
+
+  .hero-section {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero-container {
+      background-color: rgba(17, 17, 17, 0.6);
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate-main-desk-2x.jpg);
+    }
+  }
+
+  .hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate-main-desk.jpg);
+    padding: 380px 40px 40px 40px;
+  }
+
+  .features-container {
+    padding: 50px;
+  }
+
+  .feaures-list-item {
+    flex-basis: calc((100% - 88px * 2) / 3);
+    max-width: 305px;
+    position: relative;
+  }
+
+  .feaures-list-item:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 124px;
+    right: -44px;
+    top: 0;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ingredients-section {
+    padding-top: 120px;
+  }
+
+  .ingredients-list {
+    gap: 20px;
+  }
+
+  .ingredients-list-item {
+    flex-basis: calc((100% - 20px * 3) / 4);
+  }
+
+  .ingredients-overlay {
+    padding: 0;
+  }
+
+  .made-container {
+    padding: 0 32px;
+  }
+
+  .made-section {
+    padding-top: 120px;
+  }
+
+  .made-info-wrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .made-section-image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .made-list {
+    gap: 24px;
+  }
+
+  .products-section {
+    padding-top: 120px;
+  }
+
+  .products-list {
+    gap: 24px 18px;
+  }
+
+  .products-list-item {
+    padding: 32px 20px;
+    flex-basis: calc((100% - 18px * 3) / 4);
+  }
+
+  .top-sellers-section {
+    padding-top: 120px;
+  }
+
+  .top-sellers-list-item {
+    flex-basis: calc((100% - 16px * 2) / 3);
+  }
+
+  .reviews-section {
+    padding: 120px 0;
+  }
+
+  .reviews-list {
+    gap: 25px;
+  }
+
+  .reviews-list-item {
+    flex-basis: calc((100% - 25px * 2) / 3);
+  }
+
+  .footer-main-info {
+    gap: 50px;
+  }
+
+  .footer-navigation-list {
+    gap: 24px;
+  }
+
+  .footer-email-input {
+    width: 310px;
+    font-size: 18px;
+  }
+
+  .footer-form-btn {
+    padding: 17px 40px;
   }
 }
