@@ -436,10 +436,6 @@
     flex-basis: calc((100% - 20px * 3) / 4);
   }
 
-  .ingredients-overlay {
-    padding: 0;
-  }
-
   .made-container {
     padding: 0 32px;
   }
